@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <tite></tite>
+    <script type="text/javascript">
+
+        var a = prompt("Enter the first number", "right here");
+        a = +a;
+        var operation = prompt("Enter operation", "right here");
+        var b = prompt("Enter the second number", "right here");
+        b = +b;
+        var result;
+
+        switch (operation){
+            case '+':{
+                result = a + b;
+            };
+            break;
+            case '-':{
+                result = a - b;
+            };
+            break;
+            case '%': {
+                result = a % b;
+            };
+            break;
+            case '*': {
+                result = a * b;
+            };
+            break;
+            case '/':{
+                result = a / b;
+            };
+            break;
+            case '^':{
+                result = Math.pow(a, b);
+            };
+            break;
+            default: {
+                document.write("Wrong opertion");
+            };
+        }
+        document.write(result);
+    </script>
+</head>
+<body>
+</body>
+</html>
